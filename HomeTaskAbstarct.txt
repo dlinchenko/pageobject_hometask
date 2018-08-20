@@ -1,0 +1,1 @@
+Your home task is to go to any category you like on Hotline.ua and create several cases to cover filter and sort functionality, using page object model in your tests. How many tests you should create and how detailed should they be is up to you and your mentor.
