@@ -51,6 +51,21 @@ namespace PO_HW.Pages
         [FindsBy(How = How.XPath, Using = "//a[@href='/mobile/mobilnye-telefony-i-smartfony/574078/']")]
         public IWebElement memoryExtensionSupportFilter;
 
+        public bool ValidateAllPopularFiltersAreOnThePage()
+        {
+            var ret = false;
+            var props = this.GetType().GetProperties();
+            foreach(var prop in props)
+            {
+                if (prop.GetType() == typeof(IWebElement))
+                {
+                    continue;
+                }
+            }
+
+            return ret;
+        }
+
         public bool IsFilterDiplayedOnPage(IWebElement filter)
         {
             try
